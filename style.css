@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(image/bg.png);
+    height : 100%;
+    background-position : center;
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+.wrapper{
+    width: 390px;
+    padding: 30px;
+    border-radius: 7px;
+    background: #ffff;
+    margin: 0 0 35px 760px ;
+   border: 10px solid #675AFE;
+}
+.wrapper header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 510;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.wrapper form{
+    margin: 20px 0px 20px 0px;
+}
+form :where(input,select,button){
+    width: 100%;
+    outline: none;
+    border: none;
+    
+}
+form input{
+    border: 1px solid #999;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: lighter;
+    border-radius: 7px;
+}
+form p{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    border-radius: 5px;
+    border :1px solid #999;
+    justify-content: center;
+}
+.select-box select{
+    width: auto;
+    cursor: pointer;
+}
+.select-box img{
+    max-width: 25px;
+}
+.drop-list .icon{
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20PX 0 30px;
+}
+form button{
+    height: 52px;
+    color: #ffff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #675AFE;
+    border-radius: 7px;
+}
+   button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
